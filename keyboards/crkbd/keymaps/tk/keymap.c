@@ -35,9 +35,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KC_TIK KC_GRV
 #define KC_TLD S(KC_GRV)
 
-// COMBOS
-#define COMBO_ONLY_FROM_LAYER 0
-
 const uint16_t PROGMEM LAYER_1_COMBO[] = {KC_ENT, KC_Y, COMBO_END};
 const uint16_t PROGMEM LAYER_2_COMBO[] = {KC_ENT, KC_U, COMBO_END};
 const uint16_t PROGMEM LAYER_3_COMBO[] = {KC_ENT, KC_I, COMBO_END};
@@ -56,7 +53,6 @@ const uint16_t PROGMEM PASTE_COMBO[] =   {GUI_F, KC_V, COMBO_END};
 const uint16_t PROGMEM VOL_UP_COMBO =    {KC_P, CTL_SCLN, COMBO_END};
 const uint16_t PROGMEM VOL_DOWN_COMBO =  {CTL_SCLN, KC_SLSH, COMBO_END};
 const uint16_t PROGMEM VOL_MUTE_COMBO =  {KC_P, CTL_SCLN, KC_SLSH};
-
 
 combo_t key_combos[] = {
     COMBO(LAYER_1_COMBO, TO(1)),
@@ -98,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [1] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      XXXXXXX, KC_ESC , KC_DQUO, KC_QUOT, KC_LPRN, KC_RPRN,                      KC_PAST,    KC_1,    KC_2,   KC_3, KC_PPLS, XXXXXXX,
+      XXXXXXX, KC_ESC , _______, KC_BSLS, KC_LPRN, KC_RPRN,                      KC_PAST,    KC_1,    KC_2,   KC_3, KC_PPLS, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, _______, _______, _______, KC_LCBR, KC_RCBR,                      KC_PSLS,    KC_4,    KC_5,    KC_6, KC_PMNS, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
